@@ -7,7 +7,7 @@ export default function RecipeTile({ recipe }) {
     recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && (
       <div
         className="recipeTile"
-        onClick={() => window.open(recipe["recipe"]["url"])} 
+        onClick={() => window.open(recipe["recipe"]["url"])} title="click to see the details"
       >
         <img className="recipeTile__img" src={recipe["recipe"]["image"]} />
         <p className="recipeTile__name" >
